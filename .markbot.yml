@@ -1,0 +1,35 @@
+repo: 'embed-containers'
+canvasCourse: 'web-dev-3'
+
+naming: true
+restrictFileTypes: true
+liveWebsite: true
+
+git:
+  numCommits: 1
+  allCommitted: true
+  allSynced: true
+
+html:
+  - path: 'index.html'
+    valid: true
+    bestPractices: true
+    has:
+      - 'link[href="css/modules.css"]'
+      - 'div'
+      - '.embed'
+      - '.embed-item'
+      - '.embed-4by1'
+      - '.embed-16by9'
+      - '.embed-4by3'
+
+css:
+  - path: 'css/modules.css'
+    valid: true
+    bestPractices: true
+    search:
+      - 'https://modulifier.web-dev.tools/#responsive;images;list-group;embed;media-object;icons;hidden;positioning;nice-lists;buttons;forms;accessibility;print'
+
+screenshots:
+  - path: 'index.html'
+    sizes: [320, 960]
